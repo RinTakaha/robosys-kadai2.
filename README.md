@@ -27,3 +27,25 @@ colcon build
 ```bash
 source install/setup.bash
 ```
+
+## 使用方法
+### 1. Usage Tracker ノードの起動
+以下のコマンドでノードを起動します：
+```bash
+ros2 run usage_tracker usage_tracker_node
+```
+### 2. 使用開始・停止メッセージの送信
+以下のコマンドを使って、使用時間の追跡を開始・停止できます：
+#### ・使用時間の開始:
+```bash
+ros2 topic pub --once /start_time std_msgs/String "data: 'start'"
+```
+#### ・使用時間の停止
+```bash
+ros2 topic pub --once /stop_time std_msgs/String "data: 'stop'"
+```
+
+
+
+
+
