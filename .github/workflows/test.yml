@@ -10,4 +10,4 @@ jobs:
         run: |
           rsync -av ./~/ros2_setup_scripts/ros2_ws/src/usage_tracker
           cd /ros2_setup_scripts/ros2_ws
-          bash -xv ./src/usage_tracker/test/test.bash /ros2_setup_scripts
+          bash -xv ./src/usage_tracker/test/test.bash
