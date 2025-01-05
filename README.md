@@ -9,6 +9,23 @@ usage_trackerパッケージは、PCの使用時間を追跡し、記録する�
 
 /stop_time トピックで使用時間の追跡を停止。
 
+## セットアップ手順
+### 1.リポジトリのクローン
+以下のコマンドでソースコードをクローンしてください：
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/RinTakaha/robosys-kadai2..git
+```
+### 2.パッケージのビルド
+```bash
+cd ~/ros2_ws
+colcon build
+```
+### 3.ワークスペースのセットアップ
+```bash
+source install/setup.bash
+```
+
 ## 使用方法
 ### 1. Usage Tracker ノードの起動
 以下のコマンドでノードを起動します：
@@ -25,6 +42,12 @@ ros2 topic pub --once /start_time std_msgs/String "data: 'start'"
 ```bash
 ros2 topic pub --once /stop_time std_msgs/String "data: 'stop'"
 ```
+
+## テスト環境
+ubuntu-22.04
+
+## ライセンス
+このプログラムは3条項BSDライセンスのもとで公開されています。 詳細は LICENSE ファイルをご参照ください。
 
 
 
