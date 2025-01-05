@@ -23,3 +23,7 @@ git clone https://github.com/RinTakaha/robosys-kadai2..git
 cd ~/ros2_ws
 colcon build
 ```
+### 4.ワークスペースのセットアップ
+```bash
+source install/setup.bash
+```
